@@ -117,7 +117,7 @@ const Home = () => {
           transition={{ delay: 0.6 }}
         >
           <a
-            href="/projects"
+            href="#projects"
             className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
           >
             View My Projects
