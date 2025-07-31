@@ -117,12 +117,6 @@ const Home = () => {
           transition={{ delay: 0.6 }}
         >
           <a
-            href="#"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
-          >
-            View My Projects
-          </a>
-          <a
             href="https://drive.google.com/file/d/1DZH9CiYW6ZRwHF6P_jluxqFUa_X5gap0/view?usp=drivesdk"
             className="bg-gray-200 text-blue-800 px-6 py-2 rounded-lg hover:bg-gray-300 transition"
           >
