@@ -12,8 +12,8 @@ const projects = [
   {
     title: "E-commerce Learning Platform",
     description:
-      "Full MERN stack application for managing coding courses, user login, and real-time course updates.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
+      "React js application for managing coding courses, user  and real-time course updates.",
+    technologies: ["React","javaScript", "Tailwind"],
   },
   {
     title: "Employment Management System",
@@ -26,6 +26,18 @@ const projects = [
     description:
       "Personal portfolio built using React, Tailwind, and Framer Motion to showcase skills and projects.",
     technologies: ["React", "Tailwind", "Framer Motion"],
+  },
+  {
+    title: "Expense Tracker",
+    description:
+      "A smart financial tracking app that allows users to record income and expenses, categorize spending, and view visual charts for better money management.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "Chart.js"],
+  },
+  {
+    title: "Virtual Assistant",
+    description:
+      "A personalized AI-powered virtual assistant that helps with daily tasks such as reminders, notes, weather updates, and intelligent query handling.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind", "OpenAI API", "Gemini"],
   },
 ];
 
@@ -62,15 +74,17 @@ const Projects = () => {
             key={index}
             className="bg-white shadow-md hover:shadow-xl transition p-6 rounded-2xl border border-blue-100"
             variants={card}
-            whileHover={{ scale: 1.02 }}
+            whileHover={{ scale: 1.05, rotate: 1 }}
           >
-            <h3 className="text-2xl font-semibold text-blue-700 mb-2">{project.title}</h3>
+            <h3 className="text-2xl font-semibold text-blue-700 mb-2">
+              {project.title}
+            </h3>
             <p className="text-gray-700 text-sm mb-4">{project.description}</p>
             <div className="flex flex-wrap gap-2">
               {project.technologies.map((tech, i) => (
                 <span
                   key={i}
-                  className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full"
+                  className="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded-full shadow-sm"
                 >
                   {tech}
                 </span>
